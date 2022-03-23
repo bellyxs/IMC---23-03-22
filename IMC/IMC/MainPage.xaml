@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMC.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="LightPink" Padding="24" CornerRadius="0">
+        </Frame>
+
+        <Label Text="Informe o seu peso: " />
+        <Entry x:Name="Peso"/>
+
+        <Label Text="Informe a sua altura: " />
+        <Entry x:Name="Altura"/>
+
+        <Button x:Name ="Button" Text="Calcule o IMC" Clicked="Button_Clicked" />
+
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*,*,*" BackgroundColor="LightGoldenrodYellow">
+            <Label Text="IMC" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="Tabela - Classificação" Grid.Row="1" Grid.Column="1"/>
+
+
+            <Label Text="Menor que 18.5" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="Abaixo do Peso Normal" Grid.Row="2" Grid.Column="1"/>
+            
+            <Label Text="18.5 - 24.9" Grid.Row="3" Grid.Column="0"/>
+            <Label Text="Peso Normal" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="25.0 - 29.9" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="Excesso de Peso" Grid.Row="4" Grid.Column="1"/>
+
+            <Label Text="30.0 - 34.9" Grid.Row="5" Grid.Column="0"/>
+            <Label Text="Obsesidade Classe I" Grid.Row="5" Grid.Column="1"/>
+
+            <Label Text=" 35.0 - 39.9" Grid.Row="6" Grid.Column="0"/>
+            <Label Text="Obsesidade Classe II" Grid.Row="6" Grid.Column="1"/>
+
+            <Label Text="Maior ou Igual a 40.0"  Grid.Row="7" Grid.Column="0"/>
+            <Label Text="Obsesidade Classe III" Grid.Row="7" Grid.Column="1"/>
+            </Grid>
+
+    </StackLayout>
+</ContentPage>
+
+
+
+
+
+
